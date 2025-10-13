@@ -5,6 +5,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Education from "@/components/Education";
+import InteractiveTimeline from "@/components/InteractiveTimeline";
 import Contact from "@/components/Contact";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
       <Skills />
       <Experience />
       <Projects />
+      <InteractiveTimeline />
       <Education />
       <Contact />
       

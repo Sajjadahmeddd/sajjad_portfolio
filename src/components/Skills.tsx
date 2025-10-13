@@ -1,7 +1,19 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { SkillsRadarChart } from "@/components/ui/skills-radar-chart";
 
 const Skills = () => {
+  const radarSkills = [
+    { label: "Problem Solving", value: 95 },
+    { label: "Machine Learning", value: 85 },
+    { label: "Computer Vision", value: 90 },
+    { label: "Full-Stack Dev", value: 80 },
+    { label: "Data Structures", value: 92 },
+    { label: "Python/Java", value: 88 },
+    { label: "React/JS", value: 82 },
+    { label: "System Design", value: 70 }
+  ];
+
   const skillCategories = [
     {
       title: "Problem Solving & DSA",
@@ -93,16 +105,46 @@ const Skills = () => {
             ))}
           </div>
 
-          <Card className="p-8 bg-gradient-to-r from-primary/10 via-primary-glow/10 to-primary/10 border-primary/20">
-            <div className="text-center space-y-4">
-              <h3 className="text-2xl font-bold">Core Strengths</h3>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Strong analytical mindset with 450+ coding problems solved across platforms. 
-                Expertise in building ML-integrated full-stack applications with a focus on 
-                computer vision, real-time processing, and creating intelligent, user-centric solutions.
-              </p>
-            </div>
-          </Card>
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <Card className="p-8">
+              <div className="text-center space-y-4">
+                <h3 className="text-2xl font-bold">Skills Proficiency</h3>
+                <p className="text-muted-foreground">
+                  Interactive radar chart showing my technical expertise across different domains
+                </p>
+                <SkillsRadarChart skills={radarSkills} />
+              </div>
+            </Card>
+
+            <Card className="p-8 bg-gradient-to-r from-primary/10 via-primary-glow/10 to-primary/10 border-primary/20">
+              <div className="text-center space-y-4">
+                <h3 className="text-2xl font-bold">Core Strengths</h3>
+                <p className="text-lg text-muted-foreground">
+                  Strong analytical mindset with 450+ coding problems solved across platforms. 
+                  Expertise in building ML-integrated full-stack applications with a focus on 
+                  computer vision, real-time processing, and creating intelligent, user-centric solutions.
+                </p>
+                <div className="grid grid-cols-2 gap-4 pt-4">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary">450+</div>
+                    <div className="text-sm text-muted-foreground">DSA Problems</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary">8+</div>
+                    <div className="text-sm text-muted-foreground">ML Projects</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary">5+</div>
+                    <div className="text-sm text-muted-foreground">Technologies</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary">2+</div>
+                    <div className="text-sm text-muted-foreground">Years Experience</div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
         </div>
       </div>
     </section>

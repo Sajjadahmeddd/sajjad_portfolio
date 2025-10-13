@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, MapPin, Phone, Download } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { AnimatedCounter } from "@/components/ui/animated-counter";
+import { Github, Linkedin, Mail, MapPin, Phone, Download, Trophy, Code2, Star, Award } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -43,7 +45,50 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 pt-4">
+          {/* Achievement Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8">
+            <Card className="p-4 text-center hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="flex items-center justify-center mb-2">
+                <Code2 className="h-6 w-6 text-primary" />
+              </div>
+              <div className="text-2xl font-bold text-primary">
+                <AnimatedCounter end={450} suffix="+" />
+              </div>
+              <p className="text-sm text-muted-foreground">DSA Problems</p>
+            </Card>
+            
+            <Card className="p-4 text-center hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="flex items-center justify-center mb-2">
+                <Trophy className="h-6 w-6 text-primary" />
+              </div>
+              <div className="text-2xl font-bold text-primary">
+                <AnimatedCounter end={8} suffix="+" />
+              </div>
+              <p className="text-sm text-muted-foreground">ML Projects</p>
+            </Card>
+            
+            <Card className="p-4 text-center hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="flex items-center justify-center mb-2">
+                <Star className="h-6 w-6 text-primary" />
+              </div>
+              <div className="text-2xl font-bold text-primary">
+                <AnimatedCounter end={881} prefix="8." />
+              </div>
+              <p className="text-sm text-muted-foreground">CGPA</p>
+            </Card>
+            
+            <Card className="p-4 text-center hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="flex items-center justify-center mb-2">
+                <Award className="h-6 w-6 text-primary" />
+              </div>
+              <div className="text-2xl font-bold text-primary">
+                <AnimatedCounter end={5} suffix="+" />
+              </div>
+              <p className="text-sm text-muted-foreground">Certifications</p>
+            </Card>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-4 pt-8">
             <Button asChild size="lg" className="shadow-lg hover:shadow-glow transition-all">
               <a href="#projects">View My Work</a>
             </Button>

@@ -1,54 +1,79 @@
-# Welcome to your Lovable project
+# Sajjad Ahmed - Portfolio Website
 
-## Project info
+A modern, interactive portfolio showcasing ML Engineering skills, DSA expertise, and innovative projects built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/2ec2b752-5613-4c14-8916-6c043a285318
+## ✨ Features
 
-## How can I edit this code?
+### 🎨 Interactive Design
+- **Dark/Light Theme Toggle** - Seamless theme switching with system preference detection
+- **Animated Counters** - Dynamic achievement counters (450+ DSA problems, projects, etc.)
+- **Interactive Timeline** - Expandable journey timeline with detailed milestones
+- **Skills Radar Chart** - Visual representation of technical proficiency
+- **Responsive Design** - Optimized for all device sizes
 
-There are several ways of editing your application.
+### 📧 Enhanced Contact & Networking
+- **Contact Form** - Integrated form with backend submission handling
+- **Technical Profiles** - Direct links to LeetCode, HackerRank, CodeChef profiles
+- **Calendar Booking** - Schedule technical discussions via Calendly integration
+- **Social Integration** - GitHub, LinkedIn, and resume download options
 
-**Use Lovable**
+### 🚀 Performance Features
+- **Smooth Animations** - CSS transitions and keyframe animations
+- **Intersection Observer** - Optimized counter animations on scroll
+- **Theme Persistence** - Remembers user theme preference
+- **Fast Loading** - Vite-powered development and build process
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2ec2b752-5613-4c14-8916-6c043a285318) and start prompting.
+## 🛠 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+### Core Technologies
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first styling
 
-**Use your preferred IDE**
+### UI Components
+- **Shadcn/UI** - Beautiful, accessible components
+- **Radix UI** - Headless component primitives
+- **Lucide React** - Modern icon library
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Development Tools
+- **ESLint** - Code linting
+- **PostCSS** - CSS processing
+- **Autoprefixer** - CSS vendor prefixes
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Quick Start
 
-Follow these steps:
+### Prerequisites
+- Node.js 18+ and npm installed
+- Git for cloning the repository
+
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project directory
+cd story-maker-port
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```sh
+# Create production build
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview production build
+npm run preview
+```
 
 ## What technologies are used for this project?
 
