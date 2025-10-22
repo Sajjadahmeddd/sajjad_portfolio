@@ -21,8 +21,7 @@ const Skills = () => {
         "Data Structures & Algorithms",
         "LeetCode (350+ problems)",
         "Competitive Programming",
-        "Algorithm Optimization",
-        "System Design Basics"
+        "Algorithm Optimization"
       ],
       color: "bg-purple-500/10 text-purple-700 dark:text-purple-300"
     },
